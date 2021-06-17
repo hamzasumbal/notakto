@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #game-container {
+    margin: 10px 10px;
+    text-align: center;
+  }
+
+  .game-box{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #turn{
+      margin-bottom: 15%;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #start-game{
+      margin: 5%;
+  }
+
+
+  .selector-container{
+    display:inline-flex;    
+      align-items: center;
+      width: 95%;
+      justify-content: space-around;
+      margin: 5% 0%;
+  }
+
+  @media (min-width : 900px) {
+
+    .selector-container{
+        display:inline-flex;
+       width: 30%;
+       align-self: center;
+    }
+      
+  }
+
+  .red{
+      color :red
+  }
+
+  .green{
+      color: green;
+  }
+
+  .player-title{
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
