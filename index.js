@@ -132,12 +132,12 @@ const calculateWinner = () => {
     /* let len = board.length; */
     let len = length;
 
-    console.log(length)
+    console.log(board)
 
 
-    if (turn < len - 1) {
+    /* if (turn < len - 1) {
         return false
-    }
+    } */
 
 
 
@@ -244,10 +244,11 @@ const calculateWinner = () => {
 
     //a is diagonal converted into rows and columns
 
+    console.log("a - array", a)
 
-    for (let i = 0; i < dimensionRow; i++) {
+    for (let i = 0; i < a.length; i++) {
 
-        for (let j = 0; j < dimensionCol - len + 1; j++) {
+        for (let j = 0; j < a[i].length; j++) {
 
             let countlen = 0;
             if (a[i][j] === "X" || a[i][j] === "O") {
@@ -299,9 +300,9 @@ const calculateWinner = () => {
 
     //b is diagonal converted into rows and columns
 
-    for (let i = 0; i < dimensionRow; i++) {
+    for (let i = 0; i < a.length; i++) {
 
-        for (let j = 0; j < dimensionCol - len + 1; j++) {
+        for (let j = 0; j < a[i].length; j++) {
 
             let countlen = 0;
             if (b[i][j] === "X" || b[i][j] === "O") {
