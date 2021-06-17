@@ -30,8 +30,7 @@ const changeDimensionCol = (event) => {
 const changeLength = (event) => {
     length = parseInt(event.target.value);
     console.log("length", length)
-    if(length > dimensionCol || length > dimensionRow)
-    {
+    if (length > dimensionCol || length > dimensionRow) {
         alert("length should be less than row and column")
         length = parseInt(3);
         return;
@@ -60,8 +59,11 @@ const startGame = () => {
     let player2 = input2.value;
 
     if (isEmpty(player1) || isEmpty(player2)) {
-        alert("Player name is required");
-        return;
+
+        player1 = "Player 1"
+        player2 = "Player 2"
+        /* alert("Player name is required");
+        return; */
     }
 
     input1.setAttribute("disabled", true);
